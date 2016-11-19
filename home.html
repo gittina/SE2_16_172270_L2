@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html>   
     <head>
+         <link rel="stylesheet" type="text/css" href="home_style.css">
         <title> magazzino </title> 
 
     </head>
 
     <body>
         
-        <h1>Magazzino  </h1>
+        <h1>Magazzino</h1>
         
         <table border="1px" >
-            <tr> 
+            
             <tr> <!--- prima riga, intestazione tab con nomi prodotti--->
                 <th>prodotto A</th>
                 <th>prodotto B</th>
@@ -27,6 +28,30 @@
             
         
         </table>
+        
+        <br> 
+        
+        <!--- tabella per input --->
+        
+        <table border="1px" >
+            
+            <tr> <!--- prima riga, intestazione tab con nomi prodotti--->
+                <th>prodotto </th>
+                <th>quantità</th>            
+            </tr>
+            
+            <!--- seconda riga, quantità--->
+            <tr> 
+                <td>
+                    <input name="prod" type="text" value="nome prodotto"/>
+                </td>
+                <td>
+                    <input name="q" type="text" value="quantità prodotto"/>
+                </td>                            
+            </tr>                  
+        </table>
+        
+        
         
     </body>
 
