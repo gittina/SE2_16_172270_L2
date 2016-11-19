@@ -2,7 +2,7 @@
     color: chocolate;
 }
 
-#tab1, tab2, th, td, tr {
+#tab1, #tab2, th, td, tr {
     border: 1px solid black ;
     border-collapse: collapse;
 }
@@ -16,10 +16,7 @@ th {
     background-color: cornsilk
 }
 
-#tab2 {
+#tab2, #button_products {
     visibility: hidden;    
 }
 
-#button_products {
-    visibility: hidden;
-}
