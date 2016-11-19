@@ -13,10 +13,22 @@ th, tr, td {
 }
 
 th {
-    background-color: cornsilk
+    background-color: cornsilk;
 }
 
 #tab2, #button_products {
     visibility: hidden;    
 }
 
+
+#A, #B, #C {
+    border: hidden;
+    text-align: center;
+    background-color: cornsilk;
+}
+
+#p1, #p2, #p3 {
+    text-align: center;
+    border: hidden;
+    
+}

@@ -13,18 +13,29 @@
         <table id="tab1">
             
             <tr> <!--- prima riga, intestazione tab con nomi prodotti--->
-                <th>prodotto A</th>
-                <th>prodotto B</th>
-                <th>prodotto C</th>            
+                <th>
+                    <input readonly="readonly" value="A" name="A" id="A"/>
+                </th>
+                <th>
+                    <input readonly="readonly" value="B" name="B" id="B"/>
+                </th>
+                <th>
+                    <input readonly="readonly" value="C" name="C" id="C"/>
+                </th>            
             </tr>
             
             <!--- seconda riga, quantità--->
             <tr> 
-                <td>q A</td>
-                <td>q B</td>
-                <td>q C</td>            
-            </tr>
-        
+                <td>
+                    <input readonly="readonly" value="2" name="p1" id="p1"/>
+                </td>
+                <td>
+                    <input readonly="readonly"value="4" name="p2" id="p2" />
+                </td>
+                <td>
+                    <input readonly="readonly" maxlength="8" size="25" value="3" name="p3" id="p3"/>
+                </td>            
+            </tr>      
             
         
         </table>
@@ -49,15 +60,15 @@
             <!--- seconda riga, quantità--->
             <tr> 
                 <td>
-                    <input name="prod" type="text" value="nome prodotto"/>
+                    <input id="prodX" name="prod" type="text" value="nome prodotto"/>
                 </td>
                 <td>
-                    <input name="q" type="text" value="quantità prodotto"/>
+                    <input id="qX" name="q" type="text" value="quantità prodotto"/>
                 </td>                            
             </tr>                  
         </table>       
        
-        <button  id="button_products" type="button">
+        <button  onclick="inserisci()" id="button_products" type="button">
              inserisci prodotti
         </button>
         
