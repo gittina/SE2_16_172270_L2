@@ -1,4 +1,17 @@
-h1{
-    color:  aquamarine;
-    visibility: hidden;
+#title {
+    color: chocolate;
+}
+
+#tab1, tab2, th, td, tr {
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color: cornsilk
 }
