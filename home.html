@@ -11,26 +11,28 @@
         <h1 id="title">Magazzino</h1>
         
         <table id="tab1">
-            
+            <thead>
             <tr id="r1"> <!--- prima riga, intestazione tab con nomi prodotti--->
-                <th>A</th>
-                <th>B</th>
-                <th>C</th>            
+                <th class="col">A</th>
+                <th class="col">B</th>
+                <th class="col">C</th>            
             </tr>
+            </thead>
             
             <!--- seconda riga, quantità--->
-            <tr> 
+            <tbody>
+            <tr id="r2"> 
                 <td>
-                    <input readonly="readonly" value="2" name="p1" class="p"/>
+                    <input readonly="readonly" value="2" name="p0" class="p" id="p0"/>
                 </td>
                 <td>
-                    <input readonly="readonly"value="4" name="p2" class="p" />
+                    <input readonly="readonly"value="4" name="p1" class="p" id="p1" />
                 </td>
                 <td>
-                    <input readonly="readonly" maxlength="8" size="25" value="3" name="p3" class="p"/>
+                    <input readonly="readonly" maxlength="8" size="25" value="3" name="p2" class="p" id="p2"/>
                 </td>            
-            </tr>      
-            
+            </tr>   
+            </tbody>            
         
         </table>
         
@@ -45,21 +47,24 @@
         <!--- tabella per input --->
         
         <table id="tab2">
-            
+            <thead>
             <tr> <!--- prima riga, intestazione tab con nomi prodotti--->
-                <th >prodotto </th>
+                <th>prodotto </th>
                 <th>quantità</th>            
             </tr>
+            </thead>
             
+            <tbody>
             <!--- seconda riga, quantità--->
             <tr> 
                 <td>
-                    <input id="prodX" name="prod" type="text" value="nome prodotto"/>
+                    <input id="prodX" name="prod" type="text" value="A"/>
                 </td>
                 <td>
-                    <input id="qX" name="q" type="text" value="quantità prodotto"/>
+                    <input id="qX" name="q" type="text" value="4"/>
                 </td>                            
-            </tr>                  
+            </tr>   
+            </tbody>
         </table>       
        
         <button  onclick="inserisci()" id="button_products" type="button">

@@ -2,18 +2,15 @@
     color: chocolate;
 }
 
-#tab1, #tab2, th, td, tr {
+#tab1, #tab2, .col {
     border: 1px solid black ;
     border-collapse: collapse;
+    background-color: cornsilk;
 }
 
 th, tr, td {
     text-align: center;
     padding: 15px;
-}
-
-th {
-    background-color: cornsilk;
 }
 
 #tab2, #button_products {
@@ -27,7 +24,7 @@ th {
     background-color: cornsilk;
 }
 
-#p1, #p2, #p3 {
+.p {
     text-align: center;
     border: hidden;
     
