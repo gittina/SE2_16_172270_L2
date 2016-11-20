@@ -8,24 +8,27 @@ function visualizza(){
 
 
 function inserisci(){
-    var cA = Number(document.getElementById("p1").value);
-    var cB = Number(document.getElementById("p2").value);
-    
-    var prodA = document.getElementById("A").value;
-    
-    var ris = cA+cB;
-    
-    console.log(typeof(prodA));
-    
+    //var cA = Number(document.getElementById("p1").value);
+    //var cB = Number(document.getElementById("p2").value);
+               
     var prodX = document.getElementById("prodX").value;
     var qX = document.getElementById("qX").value;
+        
+    console.log("prod inserito "+prodX);
+    console.log("quant inserita "+qX);
+        
+    var table = document.getElementById("tab1");
     
-    document.getElementById("p1").value = ris;
+    var list_p = [];
+    var list_q = [];
     
-    console.log(prodX);
-    console.log(qX);
+    var prodotti = table.children[0].children[0];
+    var quant = document.getElementsByClassName("p");
     
-    
-    
-    
+    for(var i=0, n=table.rows[0].cells.length; i<n; i++){
+        list_p[i]=prodotti.children[i].innerHTML;
+        list_q[i]=parseInt(quant[i].value);
+        console.log(list_q[i]);
+        console.log(list_p[i]);
+    }
 }
